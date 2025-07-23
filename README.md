@@ -1,0 +1,1 @@
+# sonarQube-Golang-Scan
