@@ -15,6 +15,8 @@ func main() {
 	http.HandleFunc("/file", fileHandler)
 	log.Println("Server running on :8080")
 	http.ListenAndServe(":8080", nil) // BUG: No error handling
+	url.UserPassword("user", "password") // Noncompliant
+
 }
 
 func loginHandler(w http.ResponseWriter, r *http.Request) {
