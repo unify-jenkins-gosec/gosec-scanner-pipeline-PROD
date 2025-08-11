@@ -1,1 +1,1 @@
-# sonarQube-Golang-Scan
+# sonarQube-Golang-Scan for vulnerablities
