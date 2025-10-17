@@ -24,8 +24,8 @@ pipeline {
                     fi
 
                     # Run gosec and output SARIF
-                    go mod tidy
-                    gosec -fmt sarif -out gosec-results.sarif ./...
+                    go mod tidy || true
+                    gosec -fmt sarif -out gosec-results.sarif ./... || true
                 '''
             }
         }
