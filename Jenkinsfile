@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    triggers {
+        cron '00 20 * * 1-5' // Runs at 20:00 on every day-of-week from Monday through Friday
+    }
 
     stages {
         stage('Security Scan') {
